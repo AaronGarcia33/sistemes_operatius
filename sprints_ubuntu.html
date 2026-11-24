@@ -1,64 +1,66 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sprints Ubuntu · Sistemes Operatius</title>
-<link rel="stylesheet" href="css/estils.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sprints Ubuntu · Sistemes Operatius</title>
+  <link rel="stylesheet" href="css/portada.css">
 </head>
+<body class="pagina-sprints ubuntu">
+  <header class="capcalera">
+    <nav class="contenidor navegacio" aria-label="Navegació principal">
+      <a class="marca" href="index.html">
+        <span class="marca-terminal" aria-hidden="true">&gt;_</span>
+        Sistemes Operatius
+      </a>
+      <ul class="menu">
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="sprints_ubuntu.html" aria-current="page">Índex de sprints Ubuntu</a></li>
+        <li><a href="sprints_windows.html">Índex de sprints Windows</a></li>
+        <li><a href="https://github.com/aarongarcia33/sistemes_operatius">Codi a GitHub ↗</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<body>
+  <main class="contenidor index-sprints">
+    <nav class="fil-sprints" aria-label="Ubicació">
+      <a href="index.html">Inici</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">Sprints Ubuntu</span>
+    </nav>
+    <h1 class="titol-sprints">
+      <span class="icona-sprints" aria-hidden="true"><span class="simbol-sprint-terminal">&gt;<span class="cursor-sprint">_</span></span></span>
+      Sprints Ubuntu
+    </h1>
+    <ul class="llista-sprints">
+      <li>
+        <a class="fila-sprint" href="ubuntu/sprint1/index.html">
+          <h2>Sprint 1</h2>
+          <p>Instal·lació i configuració inicial</p>
+          <span class="fletxa-sprint" aria-hidden="true">→</span>
+        </a>
+      </li>
+      <li>
+        <a class="fila-sprint" href="ubuntu/sprint2/index.html">
+          <h2>Sprint 2</h2>
+          <p>Particions, processos i gestió d’usuaris</p>
+          <span class="fletxa-sprint" aria-hidden="true">→</span>
+        </a>
+      </li>
+      <li>
+        <div class="fila-sprint fila-pendent">
+          <h2>Sprint 3</h2>
+          <p>Pròximament</p>
+        </div>
+      </li>
+    </ul>
+  </main>
 
-<header class="hero">
-  <nav class="hero-nav">
-    <a href="index.html">Portada</a>
-    <a href="sprints_windows.html">Sprints Windows</a>
-    <a href="https://github.com/" target="_blank" rel="noopener">Codi a GitHub ↗</a>
-  </nav>
-
-  <div class="hero-titol">
-    <p class="miguetes">
-      <a href="index.html">Portada</a> / Sprints Ubuntu
-    </p>
-
-    <h1>Sprints Ubuntu</h1>
-    <p class="subtitol">Índex de sprints d'Ubuntu</p>
-  </div>
-</header>
-
-<main class="contenidor">
-  <section class="panell">
-
-    <div class="targetes">
-
-      <article class="targeta">
-        <h2>Sprint 1</h2>
-        <p>Instal·lació i configuració inicial</p>
-        <a class="boto" href="ubuntu/sprint1/index.html">Veure Sprint 1 →</a>
-      </article>
-
-      <article class="targeta">
-        <h2>Sprint 2</h2>
-        <p>Pròximament</p>
-        <a class="boto" href="ubuntu/sprint2/index.html">Veure Sprint 2 →</a>
-      </article>
-
-      <article class="targeta">
-        <h2>Sprint 3</h2>
-        <p>Pròximament</p>
-        <a class="boto" href="ubuntu/sprint3/index.html">Veure Sprint 3 →</a>
-      </article>
-
+  <footer class="peu">
+    <div class="contenidor peu-contingut">
+      <span>IES Ebre · Curs 2026–2027</span>
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca" rel="license">CC BY-NC-SA 4.0</a>
     </div>
-
-  </section>
-</main>
-
-<footer class="peu">
-  <p class="autoria">
-    Autor/a: <strong>Aarón Garcia Marro</strong> · Sistemes Operatius (ISOPJ1)
-  </p>
-</footer>
-
+  </footer>
 </body>
 </html>
