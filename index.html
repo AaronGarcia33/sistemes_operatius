@@ -1,72 +1,60 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sistemes Operatius - Portada</title>
-<link rel="stylesheet" href="css/estils.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistemes Operatius · Portada</title>
+  <link rel="stylesheet" href="css/portada.css">
 </head>
 <body>
+  <header class="capcalera">
+    <nav class="contenidor navegacio" aria-label="Navegació principal">
+      <a class="marca" href="index.html">
+        <span class="marca-terminal" aria-hidden="true">&gt;_</span>
+        Sistemes Operatius
+      </a>
+      <ul class="menu">
+        <li><a href="index.html" aria-current="page">Portada</a></li>
+        <li><a href="sprints_ubuntu.html">Índex de sprints Ubuntu</a></li>
+        <li><a href="sprints_windows.html">Índex de sprints Windows</a></li>
+        <li><a href="https://github.com/aarongarcia33/sistemes_operatius">Codi a GitHub ↗</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header class="hero">
-<nav class="hero-nav">
-  <a href="index.html">Portada</a>
-  <a href="sprints_ubuntu.html">Sprints Ubuntu</a>
-  <a href="sprints_windows.html">Sprints Windows</a>
-  <!-- Canvia aquest enllaç pel teu repositori quan el tinguis penjat -->
-  <a href="https://github.com/" target="_blank" rel="noopener">Codi a GitHub ↗</a>
-</nav>
-  <div class="hero-titol">
+  <main class="contenidor portada">
     <h1>Sistemes Operatius</h1>
-    <p class="subtitol">Mòdul ISOPJ1 · Cicle Formatiu de Grau Superior</p>
-  </div>
-</header>
+    <p class="subtitol">Mòdul ISOPJ1 · Aarón Garcia Marro</p>
 
-<main class="contenidor">
-  <section class="panell portada-hero">
-    <img src="img/portada.svg" alt="Il·lustració d'un terminal de sistema operatiu" class="imatge-portada">
+    <div class="sistemes">
+      <a class="targeta ubuntu" href="sprints_ubuntu.html" aria-labelledby="ubuntu-titol ubuntu-index">
+        <span class="animacio" aria-hidden="true">
+          <span class="orbita"></span>
+          <span class="finestra terminal"><span class="simbol-terminal">&gt;</span><span class="cursor"></span></span>
+        </span>
+        <h2 id="ubuntu-titol">Ubuntu</h2>
+        <span class="targeta-index" id="ubuntu-index">Índex de sprints</span>
+        <span class="fletxa" aria-hidden="true">→</span>
+      </a>
 
-    <div class="fitxa-alumne">
-      <p><strong>Alumne/a:</strong> Aarón Garcia Marro</p>
-      <p><strong>Curs:</strong> 2026-2027</p>
-      <p><strong>Centre:</strong> IES Ebre</p>
-      <p><strong>Repositori:</strong> sistemes_operatius</p>
+      <a class="targeta windows" href="sprints_windows.html" aria-labelledby="windows-titol windows-index">
+        <span class="animacio" aria-hidden="true">
+          <span class="orbita"></span>
+          <span class="finestra finestra-darrere"></span>
+          <span class="finestra finestra-davant"><span class="linies"></span></span>
+        </span>
+        <h2 id="windows-titol">Windows</h2>
+        <span class="targeta-index" id="windows-index">Índex de sprints</span>
+        <span class="fletxa" aria-hidden="true">→</span>
+      </a>
     </div>
+  </main>
 
-    <br>
-    <div class="botons-sprints">
-  <a class="boto" href="sprints_ubuntu.html"> Veure l'índex de sprints Ubuntu →</a>
-  <a class="boto" href="sprints_windows.html"> Veure l'índex de sprints Windows →</a>
-</div>
-
-    <div class="bloc-llicencia">
-      <h3>Llicència d'aquest treball</h3>
-      <p>Per defecte, tot el contingut d'aquesta web es publica amb la llicència
-         <strong>Creative Commons Reconeixement–NoComercial–CompartirIgual (CC BY-NC-SA 4.0)</strong>:
-         qualsevol persona pot veure i compartir el teu treball, sempre que
-         <strong>et citi com a autor/a</strong> i <strong>no en faci un ús comercial</strong>.</p>
-      <p>Pots mantenir-la o triar-ne una altra a
-         <a href="https://creativecommons.org/choose/?lang=ca" target="_blank" rel="noopener">creativecommons.org/choose</a>;
-         només cal que actualitzis l'enllaç i la insígnia d'aquí sota i del peu de cada pàgina.</p>
-      <div class="badge-cc">
-        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca" target="_blank" rel="license noopener">
-          <img src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png" alt="Llicència Creative Commons Reconeixement-NoComercial-CompartirIgual 4.0" width="88" height="31">
-        </a>
-        <span>CC BY-NC-SA 4.0</span>
-      </div>
+  <footer class="peu">
+    <div class="contenidor peu-contingut">
+      <span>IES Ebre · Curs 2026–2027</span>
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca" rel="license">CC BY-NC-SA 4.0</a>
     </div>
-  </section>
-</main>
-
-<footer class="peu">
-  <p class="peu-llicencia">
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca" target="_blank" rel="license noopener">
-      <img src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png" alt="Llicència Creative Commons Reconeixement-NoComercial-CompartirIgual 4.0" width="88" height="31">
-    </a>
-    <span>Contingut sota llicència <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca" target="_blank" rel="license noopener">CC BY-NC-SA 4.0</a></span>
-  </p>
-  <p class="autoria">Autor/a: <strong>Aarón Garcia Marro</strong> · Pràctica 0 · Sistemes Operatius (ISOPJ1)</p>
-</footer>
-
+  </footer>
 </body>
 </html>
